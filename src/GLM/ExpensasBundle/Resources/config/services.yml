@@ -1,0 +1,7 @@
+parameters:
+#    glm_expensas.example.class: GLM\ExpensasBundle\Example
+
+services:
+#    glm_expensas.example:
+#        class: %glm_expensas.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

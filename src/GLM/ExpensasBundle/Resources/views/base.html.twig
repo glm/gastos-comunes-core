@@ -1,0 +1,14 @@
+{% extends '::base.html.twig' %}
+{% block title %}Expensas {% block subtitle %}{% endblock %}{% endblock %}
+
+{% block sidebar %}
+    <nav>
+        <ul class="sidebar-navigation">
+            <li><a href="{{ path('GLMExpensasBundle_presupuestos') }}">Presupuestos</a></li>
+        </ul>
+    </nav>
+{% endblock %}
+{% block body %}
+    {% block content %}
+    {% endblock %}    
+{% endblock %}

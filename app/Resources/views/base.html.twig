@@ -2,12 +2,42 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}Welcome!{% endblock %} - GLM</title>
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
         {% block stylesheets %}{% endblock %}
+        <link href="{{ asset('css/screen.css') }}" type="text/css" rel="stylesheet" />
         <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        {% block body %}{% endblock %}
+        <section id="wrapper">
+            <header id="header">
+                <div class="top">
+                    {% block navigation %}
+                        <nav>
+                            <ul class="navigation">
+                                <li><a href="#">Ayuda</a></li>
+                                <li><a href="#">Contacto</a></li>
+                            </ul>
+                        </nav>
+                    {% endblock %}
+                </div>
+            </header>
+
+            <aside class="sidebar">
+                {% block sidebar %}{% endblock %}
+            </aside>
+            <section class="main-col">
+                {% block body %}{% endblock %}
+            </section>
+            
+            <div id="footer">
+                {% block footer %}
+                    GastosComunes - by <a href="https://github.com/glm">GLM</a>
+                {% endblock %}
+            </div>
+        </section>
         {% block javascripts %}{% endblock %}
     </body>
 </html>

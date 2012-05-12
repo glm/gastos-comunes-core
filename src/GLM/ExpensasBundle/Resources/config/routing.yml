@@ -1,0 +1,7 @@
+GLMExpensasBundle_home:
+    pattern:  /
+    defaults: { _controller: GLMExpensasBundle:Presupuestos:index }
+    
+GLMExpensasBundle_presupuestos:
+    pattern:  /expensas/presupuestos
+    defaults: { _controller: GLMExpensasBundle:Presupuestos:index }
