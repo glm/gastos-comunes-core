@@ -8,7 +8,7 @@ Gastos Comunes Core
     cd gastos-comunes-core
     rm -rf .git
 
-2) Installation
+2) Instalación
 ---------------
 
 Este proyecto está basado en symfony2 standard edition, por lo tanto los pasos para 
@@ -32,7 +32,7 @@ http://symfony.com/doc/current/book/installation.html
 ### Conectar a la Base de datos
 
 Cree el archivo parameters.ini a partir de la plantilla parameters.ini.dist y 
-coloque en él los parámetros de su db
+coloque en él los parámetros de su db.
 
 ### c) Aceda al App via Browser
 
