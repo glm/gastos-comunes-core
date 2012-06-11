@@ -18,7 +18,7 @@ su instalación son identicos.
 
     php app/check.php
 
-### b) Install the Vendor Libraries
+### b) Instalar librerias Vendor
 
 El proyecto se publica sin "vendors" por lo tanto necesita instalarlos.
 
